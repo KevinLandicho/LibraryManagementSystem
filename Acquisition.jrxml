@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Acquisition" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aa437757-4edd-445e-b3f3-e04e52b0f5c9">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="db_library"/>
+	<subDataset name="Dataset1" uuid="510d8f60-caa0-4a1a-b3b4-b20a9e95aa21">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="db_library"/>
+		<queryString language="SQL">
+			<![CDATA[select * from tbl_acquisition]]>
+		</queryString>
+		<field name="book_id" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="book_id"/>
+			<property name="com.jaspersoft.studio.field.label" value="book_id"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="title" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="title"/>
+			<property name="com.jaspersoft.studio.field.label" value="title"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="ISBN" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="ISBN"/>
+			<property name="com.jaspersoft.studio.field.label" value="ISBN"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="author" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="author"/>
+			<property name="com.jaspersoft.studio.field.label" value="author"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="version" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="version"/>
+			<property name="com.jaspersoft.studio.field.label" value="version"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="publisher" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="publisher"/>
+			<property name="com.jaspersoft.studio.field.label" value="publisher"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="place_published" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="place_published"/>
+			<property name="com.jaspersoft.studio.field.label" value="place_published"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="year_published" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="year_published"/>
+			<property name="com.jaspersoft.studio.field.label" value="year_published"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="pages" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="pages"/>
+			<property name="com.jaspersoft.studio.field.label" value="pages"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="category_1" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="category_1"/>
+			<property name="com.jaspersoft.studio.field.label" value="category_1"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="category_2" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="category_2"/>
+			<property name="com.jaspersoft.studio.field.label" value="category_2"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="acquisition_type" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="acquisition_type"/>
+			<property name="com.jaspersoft.studio.field.label" value="acquisition_type"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+		<field name="price" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="price"/>
+			<property name="com.jaspersoft.studio.field.label" value="price"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+		</field>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[select * from tbl_acquisition]]>
+	</queryString>
+	<field name="book_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="book_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="book_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="title" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="title"/>
+		<property name="com.jaspersoft.studio.field.label" value="title"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="ISBN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ISBN"/>
+		<property name="com.jaspersoft.studio.field.label" value="ISBN"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="author" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="author"/>
+		<property name="com.jaspersoft.studio.field.label" value="author"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="version" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="version"/>
+		<property name="com.jaspersoft.studio.field.label" value="version"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="publisher" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="publisher"/>
+		<property name="com.jaspersoft.studio.field.label" value="publisher"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="place_published" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="place_published"/>
+		<property name="com.jaspersoft.studio.field.label" value="place_published"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="year_published" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="year_published"/>
+		<property name="com.jaspersoft.studio.field.label" value="year_published"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="pages" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pages"/>
+		<property name="com.jaspersoft.studio.field.label" value="pages"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="category_1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="category_1"/>
+		<property name="com.jaspersoft.studio.field.label" value="category_1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="category_2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="category_2"/>
+		<property name="com.jaspersoft.studio.field.label" value="category_2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="acquisition_type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="acquisition_type"/>
+		<property name="com.jaspersoft.studio.field.label" value="acquisition_type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<field name="price" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_acquisition"/>
+	</field>
+	<variable name="price_SUM" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{price}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="140" y="8" width="298" height="66" uuid="b4d2de0e-1bc4-4e4a-8734-6df7a2560087"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Book Acquisition Report]]></text>
+			</staticText>
+			<image>
+				<reportElement x="30" y="0" width="102" height="78" uuid="484a47d6-b8fe-47ca-a0b4-afddedaffc92"/>
+				<imageExpression><![CDATA["C:\\Users\\Admin\\eclipse-workspace\\LMS_StudentSide\\img\\imglogo.png"]]></imageExpression>
+			</image>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="471" y="0" width="100" height="30" uuid="91be014c-08fe-4433-a00c-00fa1af7a54a"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="16" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="-9" y="0" width="39" height="16" uuid="95c6791c-29f3-4acb-8d04-b8869550a1c3"/>
+				<box padding="0">
+					<pen lineWidth="1.25" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Book ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="0" width="41" height="16" uuid="745cd30a-448f-4d79-903e-92a668589ef7"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="0" width="39" height="16" uuid="5ef9c802-cabf-45fc-8973-a18301bf624c"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ISBN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="40" height="16" uuid="54301621-dce4-488f-97e6-a9f651be51e8"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Author]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="0" width="40" height="16" uuid="f6ca785f-d6e6-47df-97fe-e346eccecd71"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Version]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="0" width="51" height="16" uuid="e580bd51-6ff2-421a-8d44-e945b05b463b"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Publisher]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="0" width="40" height="16" uuid="6c3e4a91-e3cb-449f-ad68-cadfdcf5d92a"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Place]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="0" width="39" height="16" uuid="5dded82c-3c8c-4e01-9aec-77071a816f37"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="40" height="16" uuid="c0ad0a6f-ab89-4bdc-ab52-af21d2de5cc5"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pages]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="51" height="16" uuid="81764026-5442-4c99-86d8-ccab6fb75460"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Category 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="0" width="60" height="16" uuid="c1bd4a0e-6e8b-4a2c-8445-4d94f3c79abc"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Catergory 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="0" width="50" height="16" uuid="ddc97493-817f-4c48-9f5f-995038ec853a"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="521" y="0" width="39" height="16" uuid="c406d15f-16e6-4b94-8713-f7b9dfbc420a"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="-9" y="0" width="39" height="30" uuid="0b6065ee-1d8e-4f6c-8d86-58c02831abe2"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{book_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="0" width="41" height="30" uuid="4d19f459-e16b-47d4-b4fc-49d0d2b3fc4e"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="71" y="0" width="39" height="30" uuid="af482a3d-3ba6-4aa1-a0de-431687c33a0c"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{ISBN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="40" height="30" uuid="5493cda9-0097-411e-9ac8-5bbdee95c95e"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{author}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="40" height="30" uuid="1dd04b5c-a6c1-415d-9e9e-1f5768e7eadb"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{version}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="51" height="30" uuid="e10ca5b0-cd87-42c0-b2a9-afd1cc370e36"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{publisher}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="0" width="40" height="30" uuid="24fb6b28-9ca9-4eff-897a-fe22a8876711"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{place_published}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="0" width="39" height="30" uuid="bce56b5a-7017-4bcd-af91-05f28660ba71"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{year_published}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="40" height="30" uuid="f7d8bc4f-f6f6-4c1a-8b1e-d111054e9f1d"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{pages}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="51" height="30" uuid="20ee6f79-f494-40a6-9797-d3c910930c2b"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{category_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="0" width="60" height="30" uuid="79896f08-f6a0-432e-8056-d5387862adaa"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{category_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="471" y="0" width="50" height="30" uuid="51b8097b-cd78-437d-9e69-460d1e3de2d1"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{acquisition_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="521" y="0" width="39" height="30" uuid="ecf6cccc-deee-4486-a4e9-74e99ee46121"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="365" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

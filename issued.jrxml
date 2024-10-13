@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="issued" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ef3e162e-8aee-4037-8221-541bc2b3bbc0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="db_library"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT   tbl_issued.transaction_id,tbl_issued.book_id,tbl_catalog.title,tbl_student.LRN,tbl_student.student_lname,tbl_student.student_fname,tbl_student.section,tbl_issued.time_issued,tbl_issued.date_issued,tbl_issued.Status
+FROM tbl_issued
+INNER JOIN tbl_catalog
+ON tbl_issued.book_id = tbl_catalog.book_id
+INNER JOIN tbl_student
+ON tbl_issued.LRN = tbl_student.LRN where status='Active' OR status='overdue']]>
+	</queryString>
+	<field name="transaction_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="transaction_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="transaction_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_issued"/>
+	</field>
+	<field name="book_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="book_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="book_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_issued"/>
+	</field>
+	<field name="title" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Title"/>
+		<property name="com.jaspersoft.studio.field.label" value="title"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_catalog"/>
+	</field>
+	<field name="LRN" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="LRN"/>
+		<property name="com.jaspersoft.studio.field.label" value="LRN"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_student"/>
+	</field>
+	<field name="student_lname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="student_lname"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_lname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_student"/>
+	</field>
+	<field name="student_fname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="student_fname"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_fname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_student"/>
+	</field>
+	<field name="section" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="section"/>
+		<property name="com.jaspersoft.studio.field.label" value="section"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_student"/>
+	</field>
+	<field name="time_issued" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="time_issued"/>
+		<property name="com.jaspersoft.studio.field.label" value="time_issued"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_issued"/>
+	</field>
+	<field name="date_issued" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="date_issued"/>
+		<property name="com.jaspersoft.studio.field.label" value="date_issued"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_issued"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="88" splitType="Stretch">
+			<staticText>
+				<reportElement x="140" y="8" width="298" height="66" uuid="23e9419e-5916-4e3a-acb8-cd49345aa933"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Book Issued Report]]></text>
+			</staticText>
+			<image>
+				<reportElement x="30" y="0" width="102" height="78" uuid="e84c623c-c055-4534-a8ec-dca989c0e0b3"/>
+				<imageExpression><![CDATA["C:\\Users\\Admin\\eclipse-workspace\\LMS_StudentSide\\img\\imglogo.png"]]></imageExpression>
+			</image>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="471" y="0" width="100" height="30" uuid="19f9e0b2-2c9e-43bd-ac2a-d85af9c7ceab"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="0" width="20" height="20" uuid="36594c54-1b9d-4e28-b644-f9b62c8c29e3"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="0" width="40" height="20" uuid="56bfa3f6-4fa5-470e-a288-3e9d78ee88d5"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Book ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="120" height="20" uuid="071982f0-e244-40a8-9ca1-bbfcd834fdeb"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="48" height="20" uuid="9171bebc-a02f-4267-aa3b-dfb3157dcec8"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[LRN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="0" width="60" height="20" uuid="03e2315f-d9d0-4b1e-8e3c-ac2dda573c29"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lastname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="0" width="60" height="20" uuid="48e4f485-93ef-47a4-aed9-83a6e5a8307d"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FirstName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="0" width="60" height="20" uuid="03f2bb0d-551c-4229-937b-a7e0d8ee491e"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Section]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="448" y="0" width="110" height="20" uuid="67b10b45-831e-4c51-8086-2ea4f35a37e2"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date and Time]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="0" width="20" height="30" uuid="775ead12-cd4f-4d6a-abef-c17a149a3e1e"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{transaction_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="40" height="30" uuid="9a57d010-6f51-4ae2-bbaa-5388579e57bc"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{book_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="120" height="30" uuid="f2b91103-b62f-4d96-a810-f0be7161def5"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="48" height="30" uuid="25c4aa84-8772-4468-b3b9-15b3ec33b9c1"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{LRN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="268" y="0" width="60" height="30" uuid="f97dd65b-4311-444d-86e8-8f2cc565e028"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{student_lname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="0" width="60" height="30" uuid="698d8a66-ba08-4804-9117-d414bd974f75"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{student_fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="0" width="60" height="30" uuid="486291ee-cbbc-4a71-90e4-df19a454cec9"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{section}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="0" width="110" height="30" uuid="18126588-f515-486d-a1f0-71ff95adadd6"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{time_issued}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
